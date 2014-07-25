@@ -1,0 +1,818 @@
+
+
+
+<html>
+
+<head>
+
+<style>
+   BODY {background-color: white}
+   TD {font-size: 8pt; 
+       font-family: verdana,helvetica; 
+	   text-decoration: none;
+	   white-space:nowrap;}
+   A  {text-decoration: none;
+       color: black}
+</style>
+
+<script src="ua.js"></script>
+<script src="ftiens4.js"></script>
+<script>
+// You can find instructions for this file here:
+// http://www.treeview.net
+
+USETEXTLINKS = 1;  
+STARTALLOPEN = 0;
+HIGHLIGHT = 1;
+PRESERVESTATE = 1;
+GLOBALTARGET="R";
+
+//
+foldersTree = gFld("Categorias", "home.php");
+c225 = gFld("PODER EXECUTIVO", "javascript:parent.op()");
+c955 = gFld("LEI", "javascript:parent.op()");
+c955.addChild(["LEI 10131", "mostrar.htm?id=677543&edi_id=3732"]);
+c955.addChild(["LEI 10132", "mostrar.htm?id=677544&edi_id=3732"]);
+c955.addChild(["LEI 10133", "mostrar.htm?id=677545&edi_id=3732"]);
+c955.addChild(["LEI 10134", "mostrar.htm?id=677546&edi_id=3732"]);
+c955.addChild(["LEI 10135", "mostrar.htm?id=677567&edi_id=3732"]);
+c955.addChild(["LEI 10136", "mostrar.htm?id=677568&edi_id=3732"]);
+c955.addChild(["LEI 10137", "mostrar.htm?id=677569&edi_id=3732"]);
+c2447 = gFld("DECRETO ORCAMENTARIO", "javascript:parent.op()");
+c2447.addChild(["Decreto Orça 190-14", "mostrar.htm?id=677537&edi_id=3732"]);
+c2447.addChild(["Decreto Orça 191-14", "mostrar.htm?id=677538&edi_id=3732"]);
+c2447.addChild(["Decreto Orça 192-14", "mostrar.htm?id=677539&edi_id=3732"]);
+c957 = gFld("ATO DO GOVERNADOR", "javascript:parent.op()");
+c1646 = gFld("EXONERAÇÃO", "javascript:parent.op()");
+c1646.addChild(["ATO 21.171-14", "mostrar.htm?id=677651&edi_id=3732"]);
+c1646.addChild(["ATO 21.172-14", "mostrar.htm?id=677652&edi_id=3732"]);
+c1646.addChild(["ATO 21.173-14", "mostrar.htm?id=677586&edi_id=3732"]);
+c1646.addChild(["ATO 21.174-14", "mostrar.htm?id=677587&edi_id=3732"]);
+c1646.addChild(["ATO 21.175-14", "mostrar.htm?id=677588&edi_id=3732"]);
+c1646.addChild(["ATO 21.234-14", "mostrar.htm?id=677656&edi_id=3732"]);
+c1647 = gFld("NOMEAÇÃO", "javascript:parent.op()");
+c1647.addChild(["ATO 21.176-14", "mostrar.htm?id=677589&edi_id=3732"]);
+c1647.addChild(["ATO 21.177-14", "mostrar.htm?id=677590&edi_id=3732"]);
+c1647.addChild(["ATO 21.178-14", "mostrar.htm?id=677591&edi_id=3732"]);
+c1647.addChild(["ATO 21.179-14", "mostrar.htm?id=677592&edi_id=3732"]);
+c1647.addChild(["ATO 21.180-14", "mostrar.htm?id=677593&edi_id=3732"]);
+c1647.addChild(["ATO 21.181-14", "mostrar.htm?id=677594&edi_id=3732"]);
+c1647.addChild(["ATO 21.182-14", "mostrar.htm?id=677595&edi_id=3732"]);
+c1647.addChild(["ATO 21.183-14", "mostrar.htm?id=677596&edi_id=3732"]);
+c1647.addChild(["ATO 21.184-14", "mostrar.htm?id=677597&edi_id=3732"]);
+c1647.addChild(["ATO 21.185-14", "mostrar.htm?id=677598&edi_id=3732"]);
+c1647.addChild(["ATO 21.186-14", "mostrar.htm?id=677600&edi_id=3732"]);
+c1647.addChild(["ATO 21.187-14", "mostrar.htm?id=677601&edi_id=3732"]);
+c1647.addChild(["ATO 21.188-14", "mostrar.htm?id=677602&edi_id=3732"]);
+c1647.addChild(["ATO 21.189-14", "mostrar.htm?id=677603&edi_id=3732"]);
+c1647.addChild(["ATO 21.190-14", "mostrar.htm?id=677604&edi_id=3732"]);
+c1647.addChild(["ATO 21.191-14", "mostrar.htm?id=677605&edi_id=3732"]);
+c1647.addChild(["ATO 21.192-14", "mostrar.htm?id=677606&edi_id=3732"]);
+c1647.addChild(["ATO 21.193-14", "mostrar.htm?id=677607&edi_id=3732"]);
+c1647.addChild(["ATO 21.194-14", "mostrar.htm?id=677608&edi_id=3732"]);
+c1647.addChild(["ATO 21.195-14", "mostrar.htm?id=677609&edi_id=3732"]);
+c1647.addChild(["ATO 21.196-14", "mostrar.htm?id=677610&edi_id=3732"]);
+c1647.addChild(["ATO 21.197-14", "mostrar.htm?id=677611&edi_id=3732"]);
+c1647.addChild(["ATO 21.198-14", "mostrar.htm?id=677612&edi_id=3732"]);
+c1647.addChild(["ATO 21.199-14", "mostrar.htm?id=677613&edi_id=3732"]);
+c1647.addChild(["ATO 21.200-14", "mostrar.htm?id=677614&edi_id=3732"]);
+c1647.addChild(["ATO 21.201-14", "mostrar.htm?id=677615&edi_id=3732"]);
+c1647.addChild(["ATO 21.202-14", "mostrar.htm?id=677616&edi_id=3732"]);
+c1647.addChild(["ATO 21.203-14", "mostrar.htm?id=677617&edi_id=3732"]);
+c1647.addChild(["ATO 21.204-14", "mostrar.htm?id=677618&edi_id=3732"]);
+c1647.addChild(["ATO 21.205-14", "mostrar.htm?id=677619&edi_id=3732"]);
+c1647.addChild(["ATO 21.206-14", "mostrar.htm?id=677620&edi_id=3732"]);
+c1647.addChild(["ATO 21.207-14", "mostrar.htm?id=677621&edi_id=3732"]);
+c1647.addChild(["ATO 21.208-14", "mostrar.htm?id=677622&edi_id=3732"]);
+c1647.addChild(["ATO 21.209-14", "mostrar.htm?id=677623&edi_id=3732"]);
+c1647.addChild(["ATO 21.210-14", "mostrar.htm?id=677624&edi_id=3732"]);
+c1647.addChild(["ATO 21.211-14", "mostrar.htm?id=677625&edi_id=3732"]);
+c1647.addChild(["ATO 21.212-14", "mostrar.htm?id=677626&edi_id=3732"]);
+c1647.addChild(["ATO 21.213-14", "mostrar.htm?id=677627&edi_id=3732"]);
+c1647.addChild(["ATO 21.214-14", "mostrar.htm?id=677628&edi_id=3732"]);
+c1647.addChild(["ATO 21.215-14", "mostrar.htm?id=677629&edi_id=3732"]);
+c1647.addChild(["ATO 21.216-14", "mostrar.htm?id=677630&edi_id=3732"]);
+c1647.addChild(["ATO 21.217-14", "mostrar.htm?id=677631&edi_id=3732"]);
+c1647.addChild(["ATO 21.218-14", "mostrar.htm?id=677632&edi_id=3732"]);
+c1647.addChild(["ATO 21.219-14", "mostrar.htm?id=677633&edi_id=3732"]);
+c1647.addChild(["ATO 21.220-14", "mostrar.htm?id=677634&edi_id=3732"]);
+c1647.addChild(["ATO 21.221-14", "mostrar.htm?id=677635&edi_id=3732"]);
+c1647.addChild(["ATO 21.222-14", "mostrar.htm?id=677636&edi_id=3732"]);
+c1647.addChild(["ATO 21.223-14", "mostrar.htm?id=677637&edi_id=3732"]);
+c1647.addChild(["ATO 21.224-14", "mostrar.htm?id=677638&edi_id=3732"]);
+c1647.addChild(["ATO 21.225-14", "mostrar.htm?id=677639&edi_id=3732"]);
+c1647.addChild(["ATO 21.226-14", "mostrar.htm?id=677640&edi_id=3732"]);
+c1647.addChild(["ATO 21.227-14", "mostrar.htm?id=677641&edi_id=3732"]);
+c1647.addChild(["ATO 21.228-14", "mostrar.htm?id=677647&edi_id=3732"]);
+c1647.addChild(["ATO 21.229-14", "mostrar.htm?id=677648&edi_id=3732"]);
+c1647.addChild(["ATO 21.230-14", "mostrar.htm?id=677649&edi_id=3732"]);
+c1647.addChild(["ATO 21.231-14", "mostrar.htm?id=677653&edi_id=3732"]);
+c1647.addChild(["ATO 21.232-14", "mostrar.htm?id=677654&edi_id=3732"]);
+c1647.addChild(["ATO 21.233-14", "mostrar.htm?id=677655&edi_id=3732"]);
+c1647.addChild(["ATO 21.235-14", "mostrar.htm?id=677650&edi_id=3732"]);
+c1648 = gFld("DIVERSOS", "javascript:parent.op()");
+c1648.addChild(["ATO 21.236-14", "mostrar.htm?id=677662&edi_id=3732"]);
+c1648.addChild(["ATO 21.237-14", "mostrar.htm?id=677658&edi_id=3732"]);
+c1648.addChild(["ATO 21.238-14", "mostrar.htm?id=677659&edi_id=3732"]);
+c1648.addChild(["ATO 21.239-14", "mostrar.htm?id=677657&edi_id=3732"]);
+c1648.addChild(["ATO 21.240-14", "mostrar.htm?id=677660&edi_id=3732"]);
+c1648.addChild(["ATO 21.241-14", "mostrar.htm?id=677661&edi_id=3732"]);
+c1648.addChild(["Ato nº 21157/2014", "mostrar.htm?id=677137&edi_id=3732"]);
+c1648.addChild(["Ato nº 21158/2014", "mostrar.htm?id=677138&edi_id=3732"]);
+c1648.addChild(["Ato nº 21162/2014", "mostrar.htm?id=677146&edi_id=3732"]);
+c1648.addChild(["Ato nº 21163/2014", "mostrar.htm?id=677139&edi_id=3732"]);
+c1648.addChild(["Ato nº 21164/2014", "mostrar.htm?id=677141&edi_id=3732"]);
+c1648.addChild(["Ato nº 21165/2014", "mostrar.htm?id=677142&edi_id=3732"]);
+c1648.addChild(["Ato nº 21166/2014", "mostrar.htm?id=677147&edi_id=3732"]);
+c1648.addChild(["Ato nº 21167/2014", "mostrar.htm?id=677144&edi_id=3732"]);
+c1648.addChild(["Ato nº 21168/2014", "mostrar.htm?id=677143&edi_id=3732"]);
+c1648.addChild(["Ato nº 21169/2014", "mostrar.htm?id=677140&edi_id=3732"]);
+c1648.addChild(["Ato nº 21170/2014", "mostrar.htm?id=677145&edi_id=3732"]);
+c1648.addChild(["MARIA PETRONILHA DA SILVA - EMENDA CONSTITUCIONAL Nº 70 - 2012 - PROPORCIONAL - 27.06", "mostrar.htm?id=676764&edi_id=3732"]);
+c1648.addChild(["ELDO BARBOSA - Reforma ex-officio - Conselho de disciplina-27-06-2014", "mostrar.htm?id=676765&edi_id=3732"]);
+c1648.addChild(["DIVINA APARECIDA PALHEIRO DOS SANTOS -  Retificação -CLASSE - NÍVEL - 27.06", "mostrar.htm?id=676766&edi_id=3732"]);
+
+
+c957.addChildren([c1646,c1647,c1648]);
+c1649 = gFld("DESPACHO DO GOVERNADOR", "javascript:parent.op()");
+c1649.addChild(["DESPACHO. Extrato-PAD. Carlos Eduardo Sanches - 26.06.14", "mostrar.htm?id=677540&edi_id=3732"]);
+c1649.addChild(["DESPACHO. Extrato-PAD. Maria Rita Rodrigues - 26.06.14", "mostrar.htm?id=677541&edi_id=3732"]);
+c1649.addChild(["DESPACHO. Extrato-PAD. Jussara Rodigues Alves - 26.06.14", "mostrar.htm?id=677542&edi_id=3732"]);
+c959 = gFld("SECRETARIAS", "javascript:parent.op()");
+c964 = gFld("CASA CIVIL", "javascript:parent.op()");
+c2459 = gFld("EXTRATO", "javascript:parent.op()");
+c2459.addChild(["Extrato ao 4º aditivo ao Contrato  07-2010  CORREIOS. CASACIVIL .proc 303022.2014 (1)", "mostrar.htm?id=677081&edi_id=3732"]);
+
+
+c964.addChildren([c2459]);
+c973 = gFld("ADMINISTRAÇÃO", "javascript:parent.op()");
+c2486 = gFld("ATOS", "javascript:parent.op()");
+c2486.addChild(["1904  -Enquadramento Originário - SESP- ANALISTA", "mostrar.htm?id=676936&edi_id=3732"]);
+c2486.addChild(["1991 - 2014 - AMELIA GONÇALVES NOGUEIRA - vitalicia - assistente de adm seduc - aposentado - 27.06.2", "mostrar.htm?id=677058&edi_id=3732"]);
+c2486.addChild(["1992 - 2014 - ENRI TABORDA DE FREITAS - vitalicia - PROFESSORA - aposentada-  27.06.2014", "mostrar.htm?id=677079&edi_id=3732"]);
+c2486.addChild(["1888 - 2014 -FLORICENA DE DEUS ROCHA - vitalicia - PROFESSOR - 27.06.2014", "mostrar.htm?id=677106&edi_id=3732"]);
+c2486.addChild(["1889 - NIVA TEIXEIRA RODRIGUES - vitalicia - agente desenv economico - aposentado - 27.06.2014", "mostrar.htm?id=677130&edi_id=3732"]);
+c2486.addChild(["PV - 1834 - Analista Administrativo SEFAZ", "mostrar.htm?id=677134&edi_id=3732"]);
+c2490 = gFld("EXTRATO", "javascript:parent.op()");
+c2490.addChild(["001. EXTRATO DO 1º TERMO ADITIVO AO TERMO DE COOPERAÇÃO Nº 001-2014  SAD-FUNDESP-AGE", "mostrar.htm?id=677129&edi_id=3732"]);
+
+
+c973.addChildren([c2486,c2490]);
+c975 = gFld("FAZENDA", "javascript:parent.op()");
+c2370 = gFld("AGÊNCIAS FAZENDÁRIAS", "javascript:parent.op()");
+c2398 = gFld("DIAMANTINO", "javascript:parent.op()");
+c3063 = gFld("TERMO DE OPÇÃO", "javascript:parent.op()");
+c3063.addChild(["AG. DIAMANTINO - TERMO DE OPÇÃO", "mostrar.htm?id=676752&edi_id=3732"]);
+
+
+c2398.addChildren([c3063]);
+c2442 = gFld("TANGARÁ DA SERRA", "javascript:parent.op()");
+c3368 = gFld("COMUNICADO", "javascript:parent.op()");
+c3368.addChild(["AG. TANGARÁ DA SERRA - COMUNICADO - INUTILIZAÇÃO DE NOTAS FISCAIS", "mostrar.htm?id=677089&edi_id=3732"]);
+
+
+c2442.addChildren([c3368]);
+
+
+c2370.addChildren([c2398,c2442]);
+c2508 = gFld("CONTRATO", "javascript:parent.op()");
+c2508.addChild(["SAAF- GCON - CONTRATOS - 06-27-14-  Contrato 023-14 - FIPE- TR 086-14", "mostrar.htm?id=677069&edi_id=3732"]);
+c2508.addChild(["SAAF- GCON - CONTRATOS - 06-27-14- 1º Aditivo 028-13 - Complexx", "mostrar.htm?id=677070&edi_id=3732"]);
+c2508.addChild(["SAAF- GCON - CONTRATOS - 06-27-14- 3º Aditivo - T  Contrato 029-11 - Locação Aripuanã", "mostrar.htm?id=677071&edi_id=3732"]);
+c2508.addChild(["SAAF- GCON - CONTRATOS - 06-27-14- T Contrato 008-14 PROFISCO - EQUIMAF - TR 010-14", "mostrar.htm?id=677072&edi_id=3732"]);
+c2508.addChild(["SAAF- GCON - CONTRATOS - 06-27-14- T de Rerratificação da Rescisão ao Contrato 001-14 - MB", "mostrar.htm?id=677080&edi_id=3732"]);
+c2513 = gFld("PORTARIA", "javascript:parent.op()");
+c2513.addChild(["SARP - Portaria 153-2014 UPFMT - Julho-2014", "mostrar.htm?id=676751&edi_id=3732"]);
+
+
+c975.addChildren([c2370,c2508,c2513]);
+c972 = gFld("MEIO AMBIENTE", "javascript:parent.op()");
+c2532 = gFld("EDITAL", "javascript:parent.op()");
+c2532.addChild(["EDITAL DE NOTIFICAÇÃO", "mostrar.htm?id=677022&edi_id=3732"]);
+c2535 = gFld("OUTROS", "javascript:parent.op()");
+c2535.addChild(["Publicação_Junho_08", "mostrar.htm?id=677033&edi_id=3732"]);
+c2535.addChild(["Termo de suspensão Proc. n. 174280.2013 - AQC", "mostrar.htm?id=677019&edi_id=3732"]);
+
+
+c972.addChildren([c2532,c2535]);
+c977 = gFld("ESPORTE E LAZER", "javascript:parent.op()");
+c2543 = gFld("EXTRATO", "javascript:parent.op()");
+c2543.addChild(["EXTRATO DO TERMO DE CONVÊNIO-015-2014", "mostrar.htm?id=677117&edi_id=3732"]);
+
+
+c977.addChildren([c2543]);
+c3476 = gFld("TRANSPORTE E PAVIMENTAÇÃO URBANA", "javascript:parent.op()");
+c3503 = gFld("EDITAL", "javascript:parent.op()");
+c3503.addChild(["CP-019-aviso-RESULTADO-27-06-2014", "mostrar.htm?id=677104&edi_id=3732"]);
+c3503.addChild(["CP-014-2014 -aviso abertura de proposta de preços-27-07-2014", "mostrar.htm?id=677076&edi_id=3732"]);
+c3503.addChild(["CP-004-2014 - aviso RETIFICAÇÃO DE VENCEDORA-27.06.2014 - diário da união", "mostrar.htm?id=677075&edi_id=3732"]);
+c3503.addChild(["CP-016-aviso-RESULTADO-27-06-2014", "mostrar.htm?id=677074&edi_id=3732"]);
+c3503.addChild(["TP-054-2014-aviso-RESULTADO-27-06-2014", "mostrar.htm?id=677067&edi_id=3732"]);
+c3503.addChild(["TP-045-2014- AVISO DE HABILITAÇÃO E PROPOSTA DE PREÇOS-27-06-2014 Diário da união", "mostrar.htm?id=677066&edi_id=3732"]);
+c3503.addChild(["TP-069-2014- aviso ADIAMENTO-27-06-2014", "mostrar.htm?id=677065&edi_id=3732"]);
+c3503.addChild(["TP-082-2014-1º aviso-27-06-2014", "mostrar.htm?id=677060&edi_id=3732"]);
+c3503.addChild(["TP-081-2014-1º aviso-27-06-2014", "mostrar.htm?id=677059&edi_id=3732"]);
+c3503.addChild(["TP-080-2014-1º aviso-27-06-2014", "mostrar.htm?id=677056&edi_id=3732"]);
+c3503.addChild(["TP-079-2014-1º aviso-27-06-2014", "mostrar.htm?id=677055&edi_id=3732"]);
+c3503.addChild(["TP-078-2014-1º aviso-27-06-2014", "mostrar.htm?id=677054&edi_id=3732"]);
+c3503.addChild(["TP-028-2014-aviso-RESULTADO-27-06-2014", "mostrar.htm?id=677053&edi_id=3732"]);
+c3503.addChild(["TP-059-2014-aviso-RESULTADO-27-06-2014", "mostrar.htm?id=677048&edi_id=3732"]);
+c3503.addChild(["TP-039-2014-aviso-RESULTADO-26-06-2014-diário união", "mostrar.htm?id=677047&edi_id=3732"]);
+c3504 = gFld("EXTRATO", "javascript:parent.op()");
+c3504.addChild(["Extrato do Instrumento Contratual nº 251", "mostrar.htm?id=677097&edi_id=3732"]);
+c3504.addChild(["Extrato de Publicação", "mostrar.htm?id=677094&edi_id=3732"]);
+c3504.addChild(["Extrato do Termo Aditivo nº026", "mostrar.htm?id=677012&edi_id=3732"]);
+c3504.addChild(["Extrato de Publicação", "mostrar.htm?id=677011&edi_id=3732"]);
+c3504.addChild(["Extrato do Instrumento Contratual Nº 209", "mostrar.htm?id=676762&edi_id=3732"]);
+c3506 = gFld("OUTROS", "javascript:parent.op()");
+c3506.addChild(["ORDENS 26_06_2014", "mostrar.htm?id=676722&edi_id=3732"]);
+c3506.addChild(["ORDENS CANCELAMENTO 27_06_2014", "mostrar.htm?id=677002&edi_id=3732"]);
+c3507 = gFld("PORTARIA", "javascript:parent.op()");
+c3507.addChild(["Extratos nºs.2014.02", "mostrar.htm?id=677051&edi_id=3732"]);
+c3507.addChild(["PORTARIAS 26_06_2014", "mostrar.htm?id=676723&edi_id=3732"]);
+
+
+c3476.addChildren([c3503,c3504,c3506,c3507]);
+c3478 = gFld("SEGURANÇA PÚBLICA", "javascript:parent.op()");
+c3571 = gFld("PERÍCIA OFICIAL E IDENTIFICAÇÃO TÉCNICA", "javascript:parent.op()");
+c3582 = gFld("PORTARIA", "javascript:parent.op()");
+c3582.addChild(["PORTARIA CONJUNTA Nº 293/2014/AGE-COR/POLITEC", "mostrar.htm?id=676986&edi_id=3732"]);
+c3582.addChild(["PORTARIA CONJUNTA Nº 296/2014/AGE-COR/POLITEC", "mostrar.htm?id=677008&edi_id=3732"]);
+
+
+c3571.addChildren([c3582]);
+c3522 = gFld("CONTRATO", "javascript:parent.op()");
+c3522.addChild(["EXTRATO DE PUBLICAÇÃO DO CONTRATO Nº 014.2014 SESP- DOMANI DISTRIBUIDORA DE VEICULOS LTDA", "mostrar.htm?id=677045&edi_id=3732"]);
+c3524 = gFld("EXTRATO", "javascript:parent.op()");
+c3524.addChild(["Extrato do 3º Termo Aditivo ao Instrumento Particular de Locação de Imóvel n° 066-2011-SESP - ORLAND", "mostrar.htm?id=677044&edi_id=3732"]);
+
+
+c3478.addChildren([c3571,c3522,c3524]);
+c3477 = gFld("JUSTIÇA E DIREITOS HUMANOS", "javascript:parent.op()");
+c3514 = gFld("EXTRATO", "javascript:parent.op()");
+c3514.addChild(["EXTRATO DO TERMO ADITIVO - PREF. SINOP", "mostrar.htm?id=676721&edi_id=3732"]);
+c3517 = gFld("PORTARIA", "javascript:parent.op()");
+c3517.addChild(["PORTARIA CONJUNTA Nº 309.2014.AGE-COR.SEJUDH", "mostrar.htm?id=677088&edi_id=3732"]);
+
+
+c3477.addChildren([c3514,c3517]);
+c980 = gFld("EDUCAÇÃO", "javascript:parent.op()");
+c2603 = gFld("EDITAL", "javascript:parent.op()");
+c2603.addChild(["Aviso Concorrência 002-2014-Reabertura  29-07", "mostrar.htm?id=676735&edi_id=3732"]);
+c2603.addChild(["Tomada de Preço 006- 2014- Reabertura 15-07", "mostrar.htm?id=676733&edi_id=3732"]);
+c2604 = gFld("EXTRATO", "javascript:parent.op()");
+c2604.addChild(["Extrato do Contrato 063.2014 - COZIL EQUIPAMENTOS  INDUST. LTDA", "mostrar.htm?id=676989&edi_id=3732"]);
+c2604.addChild(["Extrato do Contrato 067.2014 -L.M. ORGANIZAÇOES HOTELEIRAS LTDA.", "mostrar.htm?id=676724&edi_id=3732"]);
+c2607 = gFld("LAUDA", "javascript:parent.op()");
+c2607.addChild(["Lauda 095", "mostrar.htm?id=676972&edi_id=3732"]);
+c2607.addChild(["Lauda 092", "mostrar.htm?id=676740&edi_id=3732"]);
+c2607.addChild(["Lauda 093", "mostrar.htm?id=676741&edi_id=3732"]);
+c2607.addChild(["Lauda 094", "mostrar.htm?id=676742&edi_id=3732"]);
+c2606 = gFld("OUTROS", "javascript:parent.op()");
+c2606.addChild(["ATO Nº  300/2014-CEE/MT e Ampliação de Oferta 001/2014-CEE/MT", "mostrar.htm?id=677062&edi_id=3732"]);
+c2608 = gFld("PORTARIA", "javascript:parent.op()");
+c2608.addChild(["Portaria nº 183/2014-SEDUC - MT", "mostrar.htm?id=677133&edi_id=3732"]);
+c2608.addChild(["Portaria nº 178/2014-SEDUC - MT", "mostrar.htm?id=677132&edi_id=3732"]);
+c2608.addChild(["Portaria nº 177/2014-SEDUC - MT", "mostrar.htm?id=677131&edi_id=3732"]);
+c2608.addChild(["Portaria nº 176/2014-SEDUC - MT", "mostrar.htm?id=677118&edi_id=3732"]);
+c2608.addChild(["Portaria nº 175/2014-SEDUC - MT", "mostrar.htm?id=677116&edi_id=3732"]);
+c2608.addChild(["Portaria 185", "mostrar.htm?id=677046&edi_id=3732"]);
+c2608.addChild(["Portaria alteração comissão Hitamar 189", "mostrar.htm?id=676932&edi_id=3732"]);
+c2608.addChild(["Portarias nº. 305, 310, 308, 307, 302, 306", "mostrar.htm?id=676931&edi_id=3732"]);
+
+
+c980.addChildren([c2603,c2604,c2607,c2606,c2608]);
+c981 = gFld("TRABALHO E ASSISTÊNCIA SOCIAL", "javascript:parent.op()");
+c2618 = gFld("PORTARIA", "javascript:parent.op()");
+c2618.addChild(["COMISSÃO INTERSETORIRA BOLSA FAMILIA - PORTARIA", "mostrar.htm?id=676956&edi_id=3732"]);
+
+
+c981.addChildren([c2618]);
+c983 = gFld("INDÚSTRIA  COMÉRCIO E MINAS E ENERGIA", "javascript:parent.op()");
+c2635 = gFld("EXTRATO", "javascript:parent.op()");
+c2635.addChild(["Extrato do TC - 005-2014 - Sindicaro Rural x FUNDEIC - 1", "mostrar.htm?id=677050&edi_id=3732"]);
+c2639 = gFld("RESOLUÇÃO", "javascript:parent.op()");
+c2639.addChild(["Resolução 39 da 48ª Reunião CEDEM", "mostrar.htm?id=676743&edi_id=3732"]);
+c2639.addChild(["Resolução 38  41 42 43 da 48ª Reunião CEDEM", "mostrar.htm?id=676952&edi_id=3732"]);
+
+
+c983.addChildren([c2635,c2639]);
+c984 = gFld("CULTURA", "javascript:parent.op()");
+c2644 = gFld("EDITAL", "javascript:parent.op()");
+c2644.addChild(["Intercâmbio", "mostrar.htm?id=677028&edi_id=3732"]);
+c2645 = gFld("EXTRATO", "javascript:parent.op()");
+c2645.addChild(["Extratro de Termo de Convênio 082-2014 - Prefeitura de Indiavaí", "mostrar.htm?id=677107&edi_id=3732"]);
+c2645.addChild(["Extratro de Termo de Convênio 079-2014 - Prefeitura de Curvelândia", "mostrar.htm?id=676739&edi_id=3732"]);
+c2645.addChild(["Extratro de Termo de Convênio 075-2014 - Prefeitura de Nova Nazaré", "mostrar.htm?id=676736&edi_id=3732"]);
+c2645.addChild(["EXTRATO DO 1º  TERMO ADITIVO  DE  VALOR DO CONVÊNIO N° 023-2014", "mostrar.htm?id=676734&edi_id=3732"]);
+
+
+c984.addChildren([c2644,c2645]);
+c985 = gFld("SAÚDE", "javascript:parent.op()");
+c2654 = gFld("CONTRATO", "javascript:parent.op()");
+c2654.addChild(["Extrato - 1º TA  abelha cont 052-2010", "mostrar.htm?id=676984&edi_id=3732"]);
+c2654.addChild(["Extrato do Contrato 021-2014 KS EXTERMINIO DE PRAGAS", "mostrar.htm?id=677032&edi_id=3732"]);
+c2659 = gFld("PORTARIA", "javascript:parent.op()");
+c2659.addChild(["PORTARIA Nº 095/2014/GBSES", "mostrar.htm?id=676957&edi_id=3732"]);
+c2659.addChild(["PORTARIA Nº 096/2014/GBSES", "mostrar.htm?id=676958&edi_id=3732"]);
+c2659.addChild(["Portaria Conjunta 267/2014", "mostrar.htm?id=676968&edi_id=3732"]);
+c2659.addChild(["Portaria Conjunta 268/2014", "mostrar.htm?id=676969&edi_id=3732"]);
+c2659.addChild(["Portaria Conjunta 281/2014", "mostrar.htm?id=676970&edi_id=3732"]);
+c2659.addChild(["Portaria Conjunta 282/2014", "mostrar.htm?id=676971&edi_id=3732"]);
+c2659.addChild(["Portaria Conjunta 283/2014", "mostrar.htm?id=676990&edi_id=3732"]);
+
+
+c985.addChildren([c2654,c2659]);
+c987 = gFld("DESENVOLVIMENTO DO TURISMO", "javascript:parent.op()");
+c2676 = gFld("EXTRATO", "javascript:parent.op()");
+c2676.addChild(["EXTRATO DO TERMO DE CONVÊNIO N°03-2014 PREFEITURA DE TABAPORÃ", "mostrar.htm?id=676955&edi_id=3732"]);
+
+
+c987.addChildren([c2676]);
+c3475 = gFld("CIDADES", "javascript:parent.op()");
+c3494 = gFld("EXTRATO", "javascript:parent.op()");
+c3494.addChild(["EXTRATO DO 3º TERMO ADITIVO SIMPLIFICADO DE PRORROGAÇÃO DE VIGÊNCIA DO CONVÊNIO N° 073-2012-SECID", "mostrar.htm?id=677100&edi_id=3732"]);
+c3494.addChild(["EXTRATO DO TERMO DE CONVÊNIO N° 081-2014 Prefeitura Municipal de Itaúba", "mostrar.htm?id=677010&edi_id=3732"]);
+c3494.addChild(["EXTRATO DO 8º TERMO ADITIVO SIMPLIFICADO DE PRORROGAÇÃO DE VIGÊNCIA DO CONVÊNIO N° 176-2010-SECID", "mostrar.htm?id=676988&edi_id=3732"]);
+
+
+c3475.addChildren([c3494]);
+
+
+c959.addChildren([c964,c973,c975,c972,c977,c3476,c3478,c3477,c980,c981,c983,c984,c985,c987,c3475]);
+c960 = gFld("ADMINISTRAÇÃO INDIRETA", "javascript:parent.op()");
+c991 = gFld("FUNDAÇÃO DE AMPARO À PESQUISA", "javascript:parent.op()");
+c2686 = gFld("EXTRATO", "javascript:parent.op()");
+c2686.addChild(["Luhan Kennedy Figueiredo Magalhães", "mostrar.htm?id=677108&edi_id=3732"]);
+c2686.addChild(["Luiz Augusto Di Loreto Di Raimo", "mostrar.htm?id=677109&edi_id=3732"]);
+c2686.addChild(["Angela Márcia Selhorst e Silva Beserra", "mostrar.htm?id=677110&edi_id=3732"]);
+c2686.addChild(["Sirlei Franck Thies", "mostrar.htm?id=677128&edi_id=3732"]);
+c2686.addChild(["Roberto Alves de Arruda", "mostrar.htm?id=677127&edi_id=3732"]);
+c2686.addChild(["Paulo Celso Leventi Guimarães", "mostrar.htm?id=677125&edi_id=3732"]);
+c2686.addChild(["Patricia Simone Nogueira", "mostrar.htm?id=677124&edi_id=3732"]);
+c2686.addChild(["Nilo Leal Sander", "mostrar.htm?id=677123&edi_id=3732"]);
+c2686.addChild(["Naiani Domingos Gasparetto", "mostrar.htm?id=677122&edi_id=3732"]);
+c2686.addChild(["Márcia Aparecida Campos Furtado", "mostrar.htm?id=677121&edi_id=3732"]);
+c2686.addChild(["Leni Rodrigues Lima", "mostrar.htm?id=677120&edi_id=3732"]);
+c2686.addChild(["Gino Francisco Buzato", "mostrar.htm?id=677114&edi_id=3732"]);
+c2686.addChild(["Fernanda Palhares Maringolo Sekimura", "mostrar.htm?id=677113&edi_id=3732"]);
+c2686.addChild(["Cristiane Ferreira Lopes de Araújo", "mostrar.htm?id=677112&edi_id=3732"]);
+c2686.addChild(["Bruno Wagner Zago", "mostrar.htm?id=677111&edi_id=3732"]);
+c2686.addChild(["Gerardo Magela Vieira Júnior", "mostrar.htm?id=676945&edi_id=3732"]);
+c2686.addChild(["Dulândula Silva Miguel Wruck", "mostrar.htm?id=676944&edi_id=3732"]);
+
+
+c991.addChildren([c2686]);
+c993 = gFld("AGÊNCIA ESTADUAL DE REGULAÇÃO", "javascript:parent.op()");
+c2706 = gFld("EXTRATO", "javascript:parent.op()");
+c2706.addChild(["EXTRATO INTEGRAÇÃO TRANSPORTE", "mostrar.htm?id=677093&edi_id=3732"]);
+c2706.addChild(["EXTRATO CID IMÓVEIS", "mostrar.htm?id=677096&edi_id=3732"]);
+
+
+c993.addChildren([c2706]);
+c1000 = gFld("DEPARTAMENTO ESTADUAL DE TRÂNSITO", "javascript:parent.op()");
+c2779 = gFld("EXTRATO", "javascript:parent.op()");
+c2779.addChild(["012.2014 ANDRE CABRAL - PUBLICACAO", "mostrar.htm?id=676771&edi_id=3732"]);
+
+
+c1000.addChildren([c2779]);
+c1003 = gFld("CENTRO DE PROCESSAMENTO DE DADOS DO ESTADO DE MT", "javascript:parent.op()");
+c2808 = gFld("EXTRATO", "javascript:parent.op()");
+c2808.addChild(["EXTRATO DO TERMO DE CESSÃO Nº0072014 SETAS", "mostrar.htm?id=676965&edi_id=3732"]);
+c2808.addChild(["EXTRATO DO TERMO DE CESSÃO 017-2013-CEPROMAT-PGE", "mostrar.htm?id=676967&edi_id=3732"]);
+c2808.addChild(["JUNHO - EXTRATO DO 1ºTERMO ADITIVO DO CONTRATO 026 - 2012 - IBM", "mostrar.htm?id=676983&edi_id=3732"]);
+
+
+c1003.addChildren([c2808]);
+c3642 = gFld("MT PARTICIPAÇÕES E PROJETOS S.A.", "javascript:parent.op()");
+c3648 = gFld("EXTRATO", "javascript:parent.op()");
+c3648.addChild(["Extrato do Acordo de Cooperação Técnica nº 004-SAD", "mostrar.htm?id=677007&edi_id=3732"]);
+
+
+c3642.addChildren([c3648]);
+
+
+c960.addChildren([c991,c993,c1000,c1003,c3642]);
+c961 = gFld("EVENTOS DE PESSOAL", "javascript:parent.op()");
+c1464 = gFld("SECRETARIAS", "javascript:parent.op()");
+c1644 = gFld("PROCURADORIA GERAL DO ESTADO", "javascript:parent.op()");
+c1644.addChild(["20140627-40100-BOLE-00043.rtf", "mostrar.htm?id=676874&edi_id=3732"]);
+c1413 = gFld("ADMINISTRAÇÃO", "javascript:parent.op()");
+c1413.addChild(["20140627-50800-BOLE-00205.rtf", "mostrar.htm?id=676908&edi_id=3732"]);
+c1413.addChild(["20140627-50800-BOLE-00206.rtf", "mostrar.htm?id=676909&edi_id=3732"]);
+c1415 = gFld("FAZENDA", "javascript:parent.op()");
+c1415.addChild(["20140627-50100-BOLE-00228.rtf", "mostrar.htm?id=676875&edi_id=3732"]);
+c1417 = gFld("MEIO AMBIENTE", "javascript:parent.op()");
+c1417.addChild(["20140627-51600-BOLE-00102.rtf", "mostrar.htm?id=676910&edi_id=3732"]);
+c1417.addChild(["20140627-51600-PORT-00035.rtf", "mostrar.htm?id=676779&edi_id=3732"]);
+c3473 = gFld("SEGURANÇA PÚBLICA", "javascript:parent.op()");
+c3568 = gFld("POLÍCIA JUDICIÁRIA CIVIL", "javascript:parent.op()");
+c3568.addChild(["20140627-50252-BOLE-00216.rtf", "mostrar.htm?id=676879&edi_id=3732"]);
+c3568.addChild(["20140627-50252-BOLE-00217.rtf", "mostrar.htm?id=676880&edi_id=3732"]);
+c3568.addChild(["20140627-50252-BOLE-00219.rtf", "mostrar.htm?id=676882&edi_id=3732"]);
+c3568.addChild(["20140627-50252-BOLE-00218.rtf", "mostrar.htm?id=676881&edi_id=3732"]);
+c3569 = gFld("POLÍCIA MILITAR", "javascript:parent.op()");
+c3569.addChild(["20140627-50251-BOLE-00135.rtf", "mostrar.htm?id=676876&edi_id=3732"]);
+c3569.addChild(["20140627-50251-BOLE-00136.rtf", "mostrar.htm?id=676877&edi_id=3732"]);
+c3569.addChild(["20140627-50251-BOLE-00137.rtf", "mostrar.htm?id=676878&edi_id=3732"]);
+c3570 = gFld("CORPO DE BOMBEIROS MILITAR", "javascript:parent.op()");
+c3570.addChild(["20140627-50253-BOLE-00072.rtf", "mostrar.htm?id=676883&edi_id=3732"]);
+c3584 = gFld("PERÍCIA OFICIAL E IDENTIFICAÇÃO TÉCNICA", "javascript:parent.op()");
+c3584.addChild(["20140627-52300-BOLE-00125.rtf", "mostrar.htm?id=676913&edi_id=3732"]);
+c3584.addChild(["20140627-52300-BOLE-00124.rtf", "mostrar.htm?id=676912&edi_id=3732"]);
+c3584.addChild(["20140627-52300-BOLE-00123.rtf", "mostrar.htm?id=676911&edi_id=3732"]);
+c3584.addChild(["20140627-52300-PORT-00027.rtf", "mostrar.htm?id=676780&edi_id=3732"]);
+c3584.addChild(["20140627-52300-PORT-00028.rtf", "mostrar.htm?id=676781&edi_id=3732"]);
+
+
+c3473.addChildren([c3568,c3569,c3570,c3584]);
+c3473.addChild(["20140627-52100-BOLE-00065.rtf", "mostrar.htm?id=676919&edi_id=3732"]);
+c3473.addChild(["20140627-52100-PORT-00034.rtf", "mostrar.htm?id=676783&edi_id=3732"]);
+c3472 = gFld("JUSTIÇA E DIREITOS HUMANOS", "javascript:parent.op()");
+c3472.addChild(["20140627-52000-BOLE-00318.rtf", "mostrar.htm?id=676918&edi_id=3732"]);
+c3472.addChild(["20140627-52000-BOLE-00317.rtf", "mostrar.htm?id=676917&edi_id=3732"]);
+c3472.addChild(["20140627-52000-BOLE-00316.rtf", "mostrar.htm?id=676916&edi_id=3732"]);
+c3472.addChild(["20140627-52000-BOLE-00315.rtf", "mostrar.htm?id=676915&edi_id=3732"]);
+c3472.addChild(["20140627-52000-BOLE-00314.rtf", "mostrar.htm?id=676914&edi_id=3732"]);
+c1427 = gFld("EDUCAÇÃO", "javascript:parent.op()");
+c1427.addChild(["20140627-50400-CONT-55912.rtf", "mostrar.htm?id=676865&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55860.rtf", "mostrar.htm?id=676851&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55849.rtf", "mostrar.htm?id=676850&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55848.rtf", "mostrar.htm?id=676849&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55845.rtf", "mostrar.htm?id=676848&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55844.rtf", "mostrar.htm?id=676847&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55834.rtf", "mostrar.htm?id=676846&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55833.rtf", "mostrar.htm?id=676845&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55830.rtf", "mostrar.htm?id=676844&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55828.rtf", "mostrar.htm?id=676843&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55819.rtf", "mostrar.htm?id=676842&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55861.rtf", "mostrar.htm?id=676852&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55863.rtf", "mostrar.htm?id=676853&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55911.rtf", "mostrar.htm?id=676864&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55895.rtf", "mostrar.htm?id=676863&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55893.rtf", "mostrar.htm?id=676862&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55892.rtf", "mostrar.htm?id=676861&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55891.rtf", "mostrar.htm?id=676860&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55883.rtf", "mostrar.htm?id=676858&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55879.rtf", "mostrar.htm?id=676857&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55877.rtf", "mostrar.htm?id=676856&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55871.rtf", "mostrar.htm?id=676855&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55869.rtf", "mostrar.htm?id=676854&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55818.rtf", "mostrar.htm?id=676841&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55816.rtf", "mostrar.htm?id=676840&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55806.rtf", "mostrar.htm?id=676838&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55775.rtf", "mostrar.htm?id=676825&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55774.rtf", "mostrar.htm?id=676824&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55769.rtf", "mostrar.htm?id=676823&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55767.rtf", "mostrar.htm?id=676822&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55766.rtf", "mostrar.htm?id=676821&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55758.rtf", "mostrar.htm?id=676820&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55757.rtf", "mostrar.htm?id=676819&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55755.rtf", "mostrar.htm?id=676818&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55754.rtf", "mostrar.htm?id=676817&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55753.rtf", "mostrar.htm?id=676816&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55778.rtf", "mostrar.htm?id=676826&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55780.rtf", "mostrar.htm?id=676827&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55795.rtf", "mostrar.htm?id=676837&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55794.rtf", "mostrar.htm?id=676836&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55793.rtf", "mostrar.htm?id=676835&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55792.rtf", "mostrar.htm?id=676834&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55791.rtf", "mostrar.htm?id=676833&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55787.rtf", "mostrar.htm?id=676832&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55785.rtf", "mostrar.htm?id=676831&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55783.rtf", "mostrar.htm?id=676830&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55782.rtf", "mostrar.htm?id=676829&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55781.rtf", "mostrar.htm?id=676828&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55750.rtf", "mostrar.htm?id=676815&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55913.rtf", "mostrar.htm?id=676866&edi_id=3732"]);
+c1427.addChild(["20140627-50400-BOLE-00840.rtf", "mostrar.htm?id=676900&edi_id=3732"]);
+c1427.addChild(["20140627-50400-BOLE-00827.rtf", "mostrar.htm?id=676887&edi_id=3732"]);
+c1427.addChild(["20140627-50400-BOLE-00826.rtf", "mostrar.htm?id=676886&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55922.rtf", "mostrar.htm?id=676871&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55920.rtf", "mostrar.htm?id=676870&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55917.rtf", "mostrar.htm?id=676869&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55916.rtf", "mostrar.htm?id=676868&edi_id=3732"]);
+c1427.addChild(["20140627-50400-BOLE-00828.rtf", "mostrar.htm?id=676888&edi_id=3732"]);
+c1427.addChild(["20140627-50400-BOLE-00829.rtf", "mostrar.htm?id=676889&edi_id=3732"]);
+c1427.addChild(["20140627-50400-BOLE-00839.rtf", "mostrar.htm?id=676899&edi_id=3732"]);
+c1427.addChild(["20140627-50400-BOLE-00838.rtf", "mostrar.htm?id=676898&edi_id=3732"]);
+c1427.addChild(["20140627-50400-BOLE-00837.rtf", "mostrar.htm?id=676897&edi_id=3732"]);
+c1427.addChild(["20140627-50400-BOLE-00836.rtf", "mostrar.htm?id=676896&edi_id=3732"]);
+c1427.addChild(["20140627-50400-BOLE-00835.rtf", "mostrar.htm?id=676895&edi_id=3732"]);
+c1427.addChild(["20140627-50400-BOLE-00834.rtf", "mostrar.htm?id=676894&edi_id=3732"]);
+c1427.addChild(["20140627-50400-BOLE-00833.rtf", "mostrar.htm?id=676893&edi_id=3732"]);
+c1427.addChild(["20140627-50400-BOLE-00832.rtf", "mostrar.htm?id=676892&edi_id=3732"]);
+c1427.addChild(["20140627-50400-BOLE-00831.rtf", "mostrar.htm?id=676891&edi_id=3732"]);
+c1427.addChild(["20140627-50400-BOLE-00830.rtf", "mostrar.htm?id=676890&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55915.rtf", "mostrar.htm?id=676867&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55749.rtf", "mostrar.htm?id=676814&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55815.rtf", "mostrar.htm?id=676839&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55686.rtf", "mostrar.htm?id=676794&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55683.rtf", "mostrar.htm?id=676793&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55682.rtf", "mostrar.htm?id=676792&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55681.rtf", "mostrar.htm?id=676791&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55680.rtf", "mostrar.htm?id=676790&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55679.rtf", "mostrar.htm?id=676789&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55662.rtf", "mostrar.htm?id=676788&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55661.rtf", "mostrar.htm?id=676787&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55656.rtf", "mostrar.htm?id=676786&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55655.rtf", "mostrar.htm?id=676785&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55652.rtf", "mostrar.htm?id=676784&edi_id=3732"]);
+c1427.addChild(["20140627-50400-PORT-00308.rtf", "mostrar.htm?id=676777&edi_id=3732"]);
+c1427.addChild(["20140627-50400-PORT-00307.rtf", "mostrar.htm?id=676776&edi_id=3732"]);
+c1427.addChild(["20140627-50400-PORT-00306.rtf", "mostrar.htm?id=676775&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55689.rtf", "mostrar.htm?id=676795&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55690.rtf", "mostrar.htm?id=676796&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55738.rtf", "mostrar.htm?id=676806&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55739.rtf", "mostrar.htm?id=676807&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55740.rtf", "mostrar.htm?id=676808&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55742.rtf", "mostrar.htm?id=676809&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55743.rtf", "mostrar.htm?id=676810&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55744.rtf", "mostrar.htm?id=676811&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55745.rtf", "mostrar.htm?id=676812&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55746.rtf", "mostrar.htm?id=676813&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55734.rtf", "mostrar.htm?id=676805&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55720.rtf", "mostrar.htm?id=676804&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55697.rtf", "mostrar.htm?id=676798&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55701.rtf", "mostrar.htm?id=676799&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55703.rtf", "mostrar.htm?id=676800&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55712.rtf", "mostrar.htm?id=676801&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55716.rtf", "mostrar.htm?id=676802&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55696.rtf", "mostrar.htm?id=676797&edi_id=3732"]);
+c1427.addChild(["20140627-50400-CONT-55717.rtf", "mostrar.htm?id=676803&edi_id=3732"]);
+c1433 = gFld("CIÊNCIA E TECNOLOGIA", "javascript:parent.op()");
+c1433.addChild(["20140627-50441-CONT-00161.rtf", "mostrar.htm?id=676872&edi_id=3732"]);
+c1433.addChild(["20140627-50441-PORT-00012.rtf", "mostrar.htm?id=676778&edi_id=3732"]);
+c1440 = gFld("SAÚDE", "javascript:parent.op()");
+c1440.addChild(["20140627-50500-BOLE-00341.rtf", "mostrar.htm?id=676906&edi_id=3732"]);
+c1440.addChild(["20140627-50500-BOLE-00342.rtf", "mostrar.htm?id=676907&edi_id=3732"]);
+c1440.addChild(["20140627-50500-BOLE-00340.rtf", "mostrar.htm?id=676905&edi_id=3732"]);
+c1440.addChild(["20140627-50500-BOLE-00339.rtf", "mostrar.htm?id=676904&edi_id=3732"]);
+c1440.addChild(["20140627-50500-BOLE-00338.rtf", "mostrar.htm?id=676903&edi_id=3732"]);
+c3470 = gFld("CIDADES", "javascript:parent.op()");
+c3470.addChild(["20140627-51800-PORT-00003.rtf", "mostrar.htm?id=676782&edi_id=3732"]);
+
+
+c1464.addChildren([c1644,c1413,c1415,c1417,c3473,c3472,c1427,c1433,c1440,c3470]);
+c1480 = gFld("ADMINISTRAÇÃO INDIRETA", "javascript:parent.op()");
+c1481 = gFld("FUNDAÇÃO DE AMPARO À PESQUISA", "javascript:parent.op()");
+c1481.addChild(["20140627-10312-BOLE-00001.rtf", "mostrar.htm?id=676873&edi_id=3732"]);
+c1486 = gFld("UNIVERSIDADE DO ESTADO DE MATO GROSSO", "javascript:parent.op()");
+c1486.addChild(["20140627-50421-BOLE-00113.rtf", "mostrar.htm?id=676901&edi_id=3732"]);
+c1486.addChild(["20140627-50421-BOLE-00114.rtf", "mostrar.htm?id=676902&edi_id=3732"]);
+c1494 = gFld("INSTITUTO DE DEFESA AGROPECUÁRIA", "javascript:parent.op()");
+c1494.addChild(["20140627-50312-BOLE-00112.rtf", "mostrar.htm?id=676885&edi_id=3732"]);
+c1494.addChild(["20140627-50312-BOLE-00111.rtf", "mostrar.htm?id=676884&edi_id=3732"]);
+
+
+c1480.addChildren([c1481,c1486,c1494]);
+
+
+c961.addChildren([c1464,c1480]);
+c1142 = gFld("LICITAÇÃO", "javascript:parent.op()");
+c1502 = gFld("SECRETARIAS", "javascript:parent.op()");
+c1506 = gFld("ADMINISTRAÇÃO", "javascript:parent.op()");
+c2328 = gFld("ATAS DE REGISTRO DE PREÇOS", "javascript:parent.op()");
+c2328.addChild(["FRACASSO", "mostrar.htm?id=677098&edi_id=3732"]);
+c2328.addChild(["RESULTADO LICITAÇÃO 057.2014", "mostrar.htm?id=677101&edi_id=3732"]);
+c2328.addChild(["RESULTADO LICITAÇÃO 061.2014", "mostrar.htm?id=677126&edi_id=3732"]);
+c2328.addChild(["Adjudicação Homologação 057.2014", "mostrar.htm?id=677105&edi_id=3732"]);
+c2328.addChild(["Aviso  de Inabilitação - Pregão Presencial 065 - 2014 - Diário", "mostrar.htm?id=677135&edi_id=3732"]);
+c2328.addChild(["Aviso 1ª Convocação - Pregão Presencial 046-2014 - Análise Amostra", "mostrar.htm?id=676982&edi_id=3732"]);
+c2328.addChild(["Aviso de Licitação - Pregão Presencial  070 - 2014 - DIÁRIO", "mostrar.htm?id=676987&edi_id=3732"]);
+
+
+c1506.addChildren([c2328]);
+c1508 = gFld("FAZENDA", "javascript:parent.op()");
+c1508.addChild(["SAAF - GPAQ - LICITAÇÃO - MI 005-2014 - Consultoria_operações sujeitas ao ICMS substituição tributár", "mostrar.htm?id=676961&edi_id=3732"]);
+c3463 = gFld("SEGURANÇA PÚBLICA", "javascript:parent.op()");
+c3463.addChild(["Aviso de Resultado_PREGAO PRESENCIAL - 018.2014_SESP", "mostrar.htm?id=677103&edi_id=3732"]);
+c3463.addChild(["Aviso de Resultado_PREGÃO - 048.2014 - deserto", "mostrar.htm?id=677102&edi_id=3732"]);
+c3463.addChild(["AA - PE 032-2014_SESP", "mostrar.htm?id=677042&edi_id=3732"]);
+c3463.addChild(["AA - PE 030-2014_SESP", "mostrar.htm?id=677043&edi_id=3732"]);
+c3462 = gFld("JUSTIÇA E DIREITOS HUMANOS", "javascript:parent.op()");
+c3467 = gFld("OBRAS E SERVIÇOS DE ENGENHARIA", "javascript:parent.op()");
+c3467.addChild(["AVISO DE RESULTADO-RDC Nº 005-SEJUDH-2014-2º RELANCAMENTO-SAPEZAL-MT", "mostrar.htm?id=677034&edi_id=3732"]);
+c3467.addChild(["TERMO DE DESERCAO DE LICITACAO-RDC Nº 005-SEJUDH-2014-2º RELANCAMENTO-SAPEZAL-MT", "mostrar.htm?id=677037&edi_id=3732"]);
+c3467.addChild(["AVISO DE RESULTADO-RDC Nº 006-SEJUDH-2014-2º RELANCAMENTO-PORTO ALEGRE DO NORTE-MT", "mostrar.htm?id=677038&edi_id=3732"]);
+c3467.addChild(["TERMO DE DESERCAO DE LICITACAO-RDC Nº 006-SEJUDH-2014-2º RELANCAMENTO-PORTO ALEGRE DO NORTE-MT", "mostrar.htm?id=677040&edi_id=3732"]);
+
+
+c3462.addChildren([c3467]);
+c1516 = gFld("CIÊNCIA E TECNOLOGIA", "javascript:parent.op()");
+c1516.addChild(["Aviso de suspensão de Pregão", "mostrar.htm?id=676948&edi_id=3732"]);
+c1519 = gFld("SAÚDE", "javascript:parent.op()");
+c1519.addChild(["dispensa 043-2014  Processo 325868.2014", "mostrar.htm?id=677073&edi_id=3732"]);
+
+
+c1502.addChildren([c1506,c1508,c3463,c3462,c1516,c1519]);
+
+
+c1142.addChildren([c1502]);
+
+
+c225.addChildren([c955,c2447,c957,c1649,c959,c960,c961,c1142]);
+c1148 = gFld("PROCURADORIA GERAL DE JUSTIÇA", "javascript:parent.op()");
+c1148.addChild(["EXTRATO DE TA e outros - publicar em 27.06.2014", "mostrar.htm?id=677099&edi_id=3732"]);
+c1153 = gFld("DEFENSORIA PÚBLICA", "javascript:parent.op()");
+c1153.addChild(["ATO N. 182- 2014 -NOMEAÇÃO BRUNO SOMAVILA BARROS", "mostrar.htm?id=676725&edi_id=3732"]);
+c1153.addChild(["ATO N. 183- 2014 -DEIXA DE NOMEAR ANTÔNIO CÉSAR CAMARGO JARDIM", "mostrar.htm?id=676726&edi_id=3732"]);
+c1153.addChild(["ATO N. 184- 2014 -DEIXA DE NOMEAR KARLA FROTA DA COSTA LIMA", "mostrar.htm?id=676727&edi_id=3732"]);
+c1153.addChild(["AVISO DE RESULTADO DE LICITAÇÃO - PREGÃO 003.2014", "mostrar.htm?id=676728&edi_id=3732"]);
+c1153.addChild(["EXTRATO DO 1º TERMO DE APOSTILAMENTO A APR Nº 001.2013-DPMT", "mostrar.htm?id=676729&edi_id=3732"]);
+c1153.addChild(["AVISO DE RESULTADO DE LICITAÇÃO - PREGÃO 002.2014 (1)", "mostrar.htm?id=676730&edi_id=3732"]);
+c1153.addChild(["AVISO DE RESULTADO DE LICITAÇÃO - PREGÃO 004.2014 (1)", "mostrar.htm?id=676731&edi_id=3732"]);
+c1153.addChild(["EXTRATO DA ATA DE REGISTRO DE PREÇOS Nº 005.2014", "mostrar.htm?id=676732&edi_id=3732"]);
+c1153.addChild(["ATO N. 185- 2014 - NOMEAÇÃO DE DEFENSORES PÚBLICOS", "mostrar.htm?id=676745&edi_id=3732"]);
+c1153.addChild(["PORTARIA Nº 172- 2014-SDPG -Licença Prêmio DP - JAQUELINE MARIA DE OLIVEIRA", "mostrar.htm?id=677001&edi_id=3732"]);
+c1153.addChild(["PORTARIA Nº 173- 2014-SDPG -ESCALA DE PLANTÃO DEFENSORIA CÍVEL", "mostrar.htm?id=677119&edi_id=3732"]);
+c227 = gFld("PODER LEGISLATIVO", "javascript:parent.op()");
+c1634 = gFld("ASSEMBLÉIA LEGISLATIVA", "javascript:parent.op()");
+c1634.addChild(["extrato contrato  10 2014 - Facilit", "mostrar.htm?id=677090&edi_id=3732"]);
+c1634.addChild(["Reso 549", "mostrar.htm?id=677092&edi_id=3732"]);
+c1634.addChild(["Reso 3.854a", "mostrar.htm?id=677095&edi_id=3732"]);
+c1634.addChild(["aviso de edital pregao 011 2014", "mostrar.htm?id=676774&edi_id=3732"]);
+
+
+c227.addChildren([c1634]);
+c230 = gFld("PODER EXECUTIVO MUNICIPAL", "javascript:parent.op()");
+c1008 = gFld("PREFEITURA MUNICIPAL  DE ACORIZAL", "javascript:parent.op()");
+c1008.addChild(["Prorr TP 02-2014 - ACORIZAL  -DOE", "mostrar.htm?id=677078&edi_id=3732"]);
+c1010 = gFld("PREFEITURA MUNICIPAL  DE ALTA FLORESTA", "javascript:parent.op()");
+c1010.addChild(["A FLORESTA de T.P 007-2014", "mostrar.htm?id=676939&edi_id=3732"]);
+c1011 = gFld("PREFEITURA MUNICIPAL  DE ALTO ARAGUAIA", "javascript:parent.op()");
+c1011.addChild(["PREFEITURA MUNICIPAL DE ALTO ARAGUAIA - 15CONTRATO 150-14 Publicação-2", "mostrar.htm?id=677052&edi_id=3732"]);
+c1011.addChild(["PREFEITURA MUNICIPAL DE ALTO ARAGUAIA - AVISO DE ANULAÇÃO DE LICITAÇÃO CONCORRÊNCIA N°10-2014", "mostrar.htm?id=677057&edi_id=3732"]);
+c1011.addChild(["PREFEITURA MUNICIPAL DE ALTO ARAGUAIA - 14CONTRATO 149-14 Publicação-3", "mostrar.htm?id=677049&edi_id=3732"]);
+c1013 = gFld("PREFEITURA MUNICIPAL  DE ALTO GARÇAS", "javascript:parent.op()");
+c1013.addChild(["A GARÇAS PP39", "mostrar.htm?id=676977&edi_id=3732"]);
+c1014 = gFld("PREFEITURA MUNICIPAL  DE ALTO PARAGUAI", "javascript:parent.op()");
+c1014.addChild(["Pref. de Alto Paraguai Res. de TP nº 009.2014 - DO - 27.06.14", "mostrar.htm?id=676769&edi_id=3732"]);
+c1015 = gFld("PREFEITURA MUNICIPAL  DE ALTO TAQUARI", "javascript:parent.op()");
+c1015.addChild([" errata aditivo - publicacao", "mostrar.htm?id=677009&edi_id=3732"]);
+c1021 = gFld("PREFEITURA MUNICIPAL DE ARIPUANÃ", "javascript:parent.op()");
+c1021.addChild(["Jun14 - Resultado de PP nº 060-2014 - Pref Aripuanã - DO - PUB", "mostrar.htm?id=676926&edi_id=3732"]);
+c1024 = gFld("PREFEITURA MUNICIPAL DE BARRA DO GARÇAS", "javascript:parent.op()");
+c1024.addChild(["IOMAT AVISO DE LICITAÇÃO PE 004 PREF BARRA 27 JUNHO", "mostrar.htm?id=676991&edi_id=3732"]);
+c1024.addChild(["IOMAT AVISO DE LICITAÇÃO PP 26 PREF BARRA 27 JUNHO", "mostrar.htm?id=676995&edi_id=3732"]);
+c1024.addChild([" IOMAT AVISO DE LICITAÇÃO PE 003 PREF BARRA 27 JUNHO", "mostrar.htm?id=676996&edi_id=3732"]);
+c1025 = gFld("PREFEITURA MUNICIPAL DE BOM JESUS DO ARAGUAIA", "javascript:parent.op()");
+c1025.addChild([" AVISO DIARIO OFICIAL DO ESTADO (1)", "mostrar.htm?id=676943&edi_id=3732"]);
+c1028 = gFld("PREFEITURA MUNICIPAL DE CAMPINÁPOLIS", "javascript:parent.op()");
+c1028.addChild(["Jun14 - Aviso de PP  nº 026-2014 - Pref Campinápolis - DO - PUB", "mostrar.htm?id=677024&edi_id=3732"]);
+c1030 = gFld("PREFEITURA MUNICIPAL DE CAMPO VERDE", "javascript:parent.op()");
+c1030.addChild(["Aviso Pregão 048.2014", "mostrar.htm?id=676921&edi_id=3732"]);
+c1030.addChild(["PUBLICAÇÃO TOMADA DE PREÇO", "mostrar.htm?id=676753&edi_id=3732"]);
+c1030.addChild(["AVISO DE PREGAO", "mostrar.htm?id=676754&edi_id=3732"]);
+c1032 = gFld("PREFEITURA MUNICIPAL DE CANABRAVA DO NORTE", "javascript:parent.op()");
+c1032.addChild(["Jun14 - Decreto nº 392-2014 - Anexo I - Pref Canabrava do Norte - DO - PUB", "mostrar.htm?id=677068&edi_id=3732"]);
+c1041 = gFld("PREFEITURA MUNICIPAL DE COMODORO", "javascript:parent.op()");
+c1041.addChild(["Aviso de Resultado - 046.2014  - ALIMENTOS BRASIL - DOE", "mostrar.htm?id=677003&edi_id=3732"]);
+c1041.addChild(["Aviso de Resultado - 044.2014  - ALIMENTOS E LIMPEZA SAS - DOE", "mostrar.htm?id=676760&edi_id=3732"]);
+c1043 = gFld("PREFEITURA MUNICIPAL DE CONQUISTA D'OESTE", "javascript:parent.op()");
+c1043.addChild(["Publicação do Resultado da Licitação_PREGAO-023-2014", "mostrar.htm?id=677005&edi_id=3732"]);
+c1044 = gFld("PREFEITURA MUNICIPAL DE COTRIGUAÇU", "javascript:parent.op()");
+c1044.addChild(["Jun14 - Aviso de TP nº 014-2014 - Pref Cotriguaçu - DO -PUB", "mostrar.htm?id=676933&edi_id=3732"]);
+c1046 = gFld("PREFEITURA MUNICIPAL DE CURVELÂNDIA", "javascript:parent.op()");
+c1046.addChild(["Jun14 - Portaria  nº 363-2014 - Pref Curvelandia - DO - PUB", "mostrar.htm?id=677025&edi_id=3732"]);
+c1048 = gFld("PREFEITURA MUNICIPAL DE DIAMANTINO", "javascript:parent.op()");
+c1048.addChild(["Jun14 - Resultado de TP nº 002-2014 - Pref de Diamantino - DO - PUB", "mostrar.htm?id=676927&edi_id=3732"]);
+c1048.addChild(["Jun14 - Prorrog de TP nº 003-2014 - Pref de Diamantino - DO - PUB", "mostrar.htm?id=677026&edi_id=3732"]);
+c1054 = gFld("PREFEITURA MUNICIPAL DE GUARANTÃ DO NORTE", "javascript:parent.op()");
+c1054.addChild(["GUARANTA PP.44.14", "mostrar.htm?id=677084&edi_id=3732"]);
+c1054.addChild(["GUARANTA PP.38.14", "mostrar.htm?id=677083&edi_id=3732"]);
+c1060 = gFld("PREFEITURA MUNICIPAL DE ITAÚBA", "javascript:parent.op()");
+c1060.addChild(["ITAUBA EXT 053 E 054-2014 - DOE-DOU (1)", "mostrar.htm?id=677087&edi_id=3732"]);
+c1064 = gFld("PREFEITURA MUNICIPAL DE JAURÚ", "javascript:parent.op()");
+c1064.addChild(["ADJUDICAÇÃO DA TP 07", "mostrar.htm?id=677013&edi_id=3732"]);
+c1064.addChild([" ADJUDICAÇÃO TP 06-2014", "mostrar.htm?id=677014&edi_id=3732"]);
+c1064.addChild(["HOMOLOGAÇÃO TP 06-2014", "mostrar.htm?id=677015&edi_id=3732"]);
+c1064.addChild([" HOMOLOGAÇÃO TP 07-2014", "mostrar.htm?id=677016&edi_id=3732"]);
+c1074 = gFld("PREFEITURA MUNICIPAL DE MIRASSOL D'OESTE", "javascript:parent.op()");
+c1074.addChild(["27.06.14 materias", "mostrar.htm?id=676963&edi_id=3732"]);
+c1078 = gFld("PREFEITURA MUNICIPAL DE NOVA BANDEIRANTES", "javascript:parent.op()");
+c1078.addChild(["DOE - PREF NOVA BAND - HOMOL RESULT OS TP007", "mostrar.htm?id=676973&edi_id=3732"]);
+c1081 = gFld("PREFEITURA MUNICIPAL DE NOVA GUARITA", "javascript:parent.op()");
+c1081.addChild(["PREFEITURA MUNICIPAL DE NOVA GUARITA - AVISO DE LICITAÇÃO PREGÃO PRESENCIAL N°21-2014", "mostrar.htm?id=677061&edi_id=3732"]);
+c1083 = gFld("PREFEITURA MUNICIPAL DE NOVA MARILÂNDIA", "javascript:parent.op()");
+c1083.addChild(["N MARILANDIA CONC 002-2014-", "mostrar.htm?id=677085&edi_id=3732"]);
+c1083.addChild(["N MARILANDIA COV 005-2014-", "mostrar.htm?id=677086&edi_id=3732"]);
+c1085 = gFld("PREFEITURA MUNICIPAL DE NOVA MONTE VERDE", "javascript:parent.op()");
+c1085.addChild(["DOE - PREF NOVA MONTE VERDE -  RESULTADO TP005", "mostrar.htm?id=677021&edi_id=3732"]);
+c1085.addChild(["DOE - PREF NOVA MONTE VERDE - PP033", "mostrar.htm?id=677036&edi_id=3732"]);
+c1087 = gFld("PREFEITURA MUNICIPAL DE NOVA NAZARÉ", "javascript:parent.op()");
+c1087.addChild(["N NAZARÉ PP 21 -", "mostrar.htm?id=676940&edi_id=3732"]);
+c1089 = gFld("PREFEITURA MUNICIPAL DE NOVA SANTA HELENA", "javascript:parent.op()");
+c1089.addChild(["DOE - PREF. NSH - ADITIVOS DE CONTRATOS 057-058-2014", "mostrar.htm?id=676974&edi_id=3732"]);
+c1090 = gFld("PREFEITURA MUNICIPAL DE NOVA UBIRATÃ", "javascript:parent.op()");
+c1090.addChild(["DOE - PREF. N. UBIRATÃ - RESULT PP 026 e EXTRATO CONT. 022-2014", "mostrar.htm?id=676976&edi_id=3732"]);
+c1094 = gFld("PREFEITURA MUNICIPAL DE NOVO SANTO ANTÔNIO", "javascript:parent.op()");
+c1094.addChild(["Jun14 - Aviso de PP nº 17-2014 - Pref Novo Santo Antonio - DO - PUB", "mostrar.htm?id=676928&edi_id=3732"]);
+c1097 = gFld("PREFEITURA MUNICIPAL DE PARANATINGA", "javascript:parent.op()");
+c1097.addChild(["Pref. de Paranatinga Aviso de Audiencia Publica - DO - 27.06.14", "mostrar.htm?id=677039&edi_id=3732"]);
+c1102 = gFld("PREFEITURA MUNICIPAL DE PONTAL DO ARAGUAIA", "javascript:parent.op()");
+c1102.addChild(["IOMAT AVISO LICITAÇÃO PP 09 PREF PONTAL 27 JUNHO", "mostrar.htm?id=676997&edi_id=3732"]);
+c1110 = gFld("PREFEITURA MUNICIPAL DE PRIMAVERA DO LESTE", "javascript:parent.op()");
+c1110.addChild(["Preg030-14AvManutencaoVeiculos_SRP", "mostrar.htm?id=676935&edi_id=3732"]);
+c1110.addChild(["06_ExtAd_Junho2014_Extra", "mostrar.htm?id=676934&edi_id=3732"]);
+c1117 = gFld("PREFEITURA MUNICIPAL DE RIBEIRÃOZINHO", "javascript:parent.op()");
+c1117.addChild([" AVISO PRORROGAÇÃO", "mostrar.htm?id=676966&edi_id=3732"]);
+c1122 = gFld("PREFEITURA MUNICIPAL DE SALTO DO CÉU", "javascript:parent.op()");
+c1122.addChild(["Jun14 - Aviso de PP nº 009-2014 - Pref de Salto do Céu - DO - PUB", "mostrar.htm?id=676929&edi_id=3732"]);
+c1122.addChild(["Jun14 - Contrato nº 037-2014 - Pref Salto do Céu - DO - PUB", "mostrar.htm?id=677027&edi_id=3732"]);
+c1128 = gFld("PREFEITURA MUNICIPAL DE SANTO ANTÔNIO DE LEVERGER", "javascript:parent.op()");
+c1128.addChild(["PREFEITURA MUNICIPAL DE SANTO ANTONIO DE LEVERGER - AVISOs DE ADESÃO PREGÃO PRESENCIAL N°22-2014 E N", "mostrar.htm?id=677077&edi_id=3732"]);
+c1133 = gFld("PREFEITURA MUNICIPAL DE SÃO JOSÉ DOS QUATRO MARCOS", "javascript:parent.op()");
+c1133.addChild(["PUBLICAÇÃO DIA A DIA DA AMM E IOMT (30)", "mostrar.htm?id=676985&edi_id=3732"]);
+c1133.addChild([" PUBLICAÇÃO DIA A DIA DA AMM E IOMT (35)", "mostrar.htm?id=676951&edi_id=3732"]);
+c1133.addChild(["EXTRATO-TERMO ADITIVO", "mostrar.htm?id=676757&edi_id=3732"]);
+c1135 = gFld("PREFEITURA MUNICIPAL DE SAPEZAL", "javascript:parent.op()");
+c1135.addChild([" EXTRATO DE PUBLICAÇÃO - DISPENSA DE LICITAÇÃO N.° 016.2014", "mostrar.htm?id=677020&edi_id=3732"]);
+c1135.addChild(["PUBLICAÇÃO DO CONTRATO N° 036-2014 MARCOS ROBERTO (LOCAÇÃO ASSISTÊNCIA SOCIAL)", "mostrar.htm?id=676755&edi_id=3732"]);
+c1137 = gFld("PREFEITURA MUNICIPAL DE SINOP", "javascript:parent.op()");
+c1137.addChild(["004 - TERMO DE ADESÃO ATA 057-2013 - FNDE RP PE 078-2012 - FNDE - GELADEIRA VERTICAL INDUSTRIAL", "mostrar.htm?id=677017&edi_id=3732"]);
+c1137.addChild(["041 - EXT. RESUL PP 040-2014 -AQUISIÇÃO DE FERRAMENTAS E EQUIPAMENTOS DE EPIs ATENDENDO SOLICITAÇÃO", "mostrar.htm?id=677018&edi_id=3732"]);
+c1137.addChild(["EXT. PREGÃO PRESENCIAL 050-14 SRP 081-14 - TRANSPORTE ESCOLAR", "mostrar.htm?id=677023&edi_id=3732"]);
+c1137.addChild(["04 - EXT. ANULACAO - P.P.046-2014 SRP 074-2014 - AQUISIÇÃO DE EXTINTORES E SERVIÇOS DE RECARGAS (1)", "mostrar.htm?id=676758&edi_id=3732"]);
+c1137.addChild(["04 - EXT. ANULACAO - P.P.046-2014 SRP 074-2014 - AQUISIÇÃO DE EXTINTORES E SERVIÇOS DE RECARGAS", "mostrar.htm?id=676756&edi_id=3732"]);
+c1138 = gFld("PREFEITURA MUNICIPAL DE SORRISO", "javascript:parent.op()");
+c1138.addChild(["SORRISO TP 012-2014", "mostrar.htm?id=676978&edi_id=3732"]);
+c1139 = gFld("PREFEITURA MUNICIPAL DE TABAPORÃ", "javascript:parent.op()");
+c1139.addChild(["DOE - PREF. TABAPORÃ - AVISO  PP 029-2014", "mostrar.htm?id=676980&edi_id=3732"]);
+c1140 = gFld("PREFEITURA MUNICIPAL DE TANGARÁ DA SERRA", "javascript:parent.op()");
+c1140.addChild(["27.06.2014 - Result. PP 035 e PP.36", "mostrar.htm?id=677136&edi_id=3732"]);
+c1141 = gFld("PREFEITURA MUNICIPAL DE TAPURAH", "javascript:parent.op()");
+c1141.addChild(["TAPURAH PP53", "mostrar.htm?id=676941&edi_id=3732"]);
+c1154 = gFld("PREFEITURA MUNICIPAL DE VILA RICA", "javascript:parent.op()");
+c1154.addChild(["Pref. de Vila Rica Res. de PE nº 022.2014 - DO - 27.06.14", "mostrar.htm?id=676770&edi_id=3732"]);
+c1154.addChild(["Pref. de Vila Rica Res. de Enxt. de Contrato nº 020.2014 - DO - 27.06.14", "mostrar.htm?id=676773&edi_id=3732"]);
+
+
+c230.addChildren([c1008,c1010,c1011,c1013,c1014,c1015,c1021,c1024,c1025,c1028,c1030,c1032,c1041,c1043,c1044,c1046,c1048,c1054,c1060,c1064,c1074,c1078,c1081,c1083,c1085,c1087,c1089,c1090,c1094,c1097,c1102,c1110,c1117,c1122,c1128,c1133,c1135,c1137,c1138,c1139,c1140,c1141,c1154]);
+c950 = gFld("PODER LEGISLATIVO MUNICIPAL", "javascript:parent.op()");
+c1199 = gFld("CÂMARA MUNICIPAL DE FIGUEIRÓPOLIS D'OESTE", "javascript:parent.op()");
+c1199.addChild(["EXTRATO DO EDITAL COMPLEMENTAR No 07-2014 - RESULTADO FINAL DO CONCURSO", "mostrar.htm?id=676746&edi_id=3732"]);
+c1199.addChild(["EXTRATO DO EDITAL COMPLEMENTAR No 07-2014 - RESULTADO FINAL DO CONCURSO", "mostrar.htm?id=676747&edi_id=3732"]);
+c1372 = gFld("CÂMARA MUNICIPAL DE SAPEZAL", "javascript:parent.op()");
+c1372.addChild(["Extrato do Edital nº 008.2014 Publicação", "mostrar.htm?id=676759&edi_id=3732"]);
+
+
+c950.addChildren([c1199,c1372]);
+c231 = gFld("TERCEIROS", "javascript:parent.op()");
+c231.addChild(["MF MT CONSTRUTORA E INCORPORADORA LTDA 02", "mostrar.htm?id=677030&edi_id=3732"]);
+c231.addChild([" Edital - Brasagro e Petrocal", "mostrar.htm?id=674551&edi_id=3732"]);
+c231.addChild(["MF MT CONSTRUTORA E INCORPORADORA LTDA -ME 01", "mostrar.htm?id=677031&edi_id=3732"]);
+c231.addChild(["Rosario2000Edital", "mostrar.htm?id=675732&edi_id=3732"]);
+c231.addChild(["EDITAL DE NOTIFICAÇÃO", "mostrar.htm?id=676479&edi_id=3732"]);
+c231.addChild(["CONVOCAÇÃO AGE05072014", "mostrar.htm?id=676492&edi_id=3732"]);
+c231.addChild(["PUBLICAÇÃO IOMAT - TOLEDO", "mostrar.htm?id=676750&edi_id=3732"]);
+c231.addChild([" aviso resumido edital de eleiçaõ", "mostrar.htm?id=676772&edi_id=3732"]);
+c231.addChild(["AVISO ADIAMENTO PREGAO 013-2014 2", "mostrar.htm?id=676920&edi_id=3732"]);
+c231.addChild([" Publicação LI LP Rudinei", "mostrar.htm?id=676923&edi_id=3732"]);
+c231.addChild(["Publicação Jornal (1)", "mostrar.htm?id=676924&edi_id=3732"]);
+c231.addChild(["PUBLPREGÃO PRESENCIAL 029 isolamento térmico", "mostrar.htm?id=676949&edi_id=3732"]);
+c231.addChild(["PUBLPREGÃO PRESENCIAL 035 JARDINS", "mostrar.htm?id=676950&edi_id=3732"]);
+c231.addChild(["EDITAL DE CONVOCAÇÃO (1)", "mostrar.htm?id=676954&edi_id=3732"]);
+c231.addChild(["27.06.14 AL", "mostrar.htm?id=676964&edi_id=3732"]);
+c231.addChild(["RETIFICAÇÃO EDITAL DE CONVOCACÃO SINDAL MT", "mostrar.htm?id=676975&edi_id=3732"]);
+c231.addChild(["IOMAT EDITAL DE NOTIFICAÇÃO PROCON BGARÇAS 27 JUNHO", "mostrar.htm?id=676992&edi_id=3732"]);
+c231.addChild(["SEMA DE P.M.VIOLA 27 JUNHO", "mostrar.htm?id=676993&edi_id=3732"]);
+c231.addChild(["SEMA DE Nutri Raça Indústria e Comércio de Rações Ltda", "mostrar.htm?id=676994&edi_id=3732"]);
+c231.addChild(["Aviso de Prorrogação  Pregão 001-2014-CONDOMINIO-Manutenção Preventina em Grupo Gerador de 40 KVA", "mostrar.htm?id=677006&edi_id=3732"]);
+c231.addChild(["ANA CLAUDIA", "mostrar.htm?id=677035&edi_id=3732"]);
+c231.addChild(["ROQUE DAL AVECHIA-", "mostrar.htm?id=677063&edi_id=3732"]);
+c231.addChild(["JEFFARSON LUIZ ARRUDA", "mostrar.htm?id=677064&edi_id=3732"]);
+c231.addChild(["ATIVA ENG LIC AMB", "mostrar.htm?id=677082&edi_id=3732"]);
+c231.addChild(["DOMT - Sopave Norte 27.06.2014 - Balanco 2013 - PV 557", "mostrar.htm?id=677029&edi_id=3732"]);
+c231.addChild(["(BALAN", "mostrar.htm?id=676999&edi_id=3732"]);
+c231.addChild(["(BALAN", "mostrar.htm?id=677000&edi_id=3732"]);
+c231.addChild(["[27035]-corvo_advogados_legal_bal_Anual_DOEMT-sem ap_novo", "mostrar.htm?id=675897&edi_id=3732"]);
+c951 = gFld("EXTRAVIO DE DOCUMENTOS", "javascript:parent.op()");
+c951.addChild(["kUROKI- extravio", "mostrar.htm?id=676473&edi_id=3732"]);
+c951.addChild(["EXTRAVIO LUIZ CARLOS", "mostrar.htm?id=676103&edi_id=3732"]);
+c951.addChild(["Extravio de vias de Notas Fiscais - Revisado", "mostrar.htm?id=676071&edi_id=3732"]);
+c951.addChild(["Extravio de Folha de ponto Leonisia - DO - 25, 26 e 27.06.14", "mostrar.htm?id=676000&edi_id=3732"]);
+c951.addChild(["EXTRAVIO UNIOESTE 3XDC E DO", "mostrar.htm?id=675900&edi_id=3732"]);
+c951.addChild(["EXTRAVIO FERTRIO 3X DC E DO", "mostrar.htm?id=675761&edi_id=3732"]);
+c951.addChild(["Comunicado iomat- BRAZ CORREA DE SOUZA-ME TEXTO", "mostrar.htm?id=675717&edi_id=3732"]);
+c951.addChild(["EXTRAVIO TRANSPORTADORA DO CARLÃO 3 DIAS", "mostrar.htm?id=675709&edi_id=3732"]);
+c951.addChild(["DIEGO JOSE BETIOLO", "mostrar.htm?id=675700&edi_id=3732"]);
+c949 = gFld("PODER JUDICIÁRIO", "javascript:parent.op()");
+c1635 = gFld("TRIBUNAL DE JUSTIÇA DO ESTADO DE MATO GROSSO", "javascript:parent.op()");
+c1635.addChild(["PE N. 049/2014 - MATERIAL GRÁFICO", "mostrar.htm?id=677041&edi_id=3732"]);
+c1635.addChild([" Extrato do Contrato nº 43/2014", "mostrar.htm?id=676761&edi_id=3732"]);
+
+
+c949.addChildren([c1635]);
+
+
+foldersTree.addChildren([c225,c1148,c1153,c227,c230,c950,c231,c951,c949]);
+</script>
+<body topmargin=16 marginheight=16>
+<div id="topo_categorias" style="position:absolute; top:0; left:0; "><table border=0><tr><td><font size=-2><a style="font-size:7pt;text-decoration:none;color:silver" href=http://www.treemenu.net/ target=_blank></a></font></td></tr></table></div>
+
+<script>
+initializeDocument();
+//ajax.send(null);
+</script>
+</html>
